@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://omri.github.io/Ticketz-UI",
+  "homepage": "https://omri.github.io/ticketz-ui",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
