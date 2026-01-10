@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
+import AppHub from './pages/AppHub';
 import Discovery from './pages/Discovery';
 import Communities from './pages/Communities';
 import About from './pages/About';
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         {/* Public / Landing */}
         <Route path="/" element={<LandingPage />} />
+        <Route path="/app" element={<AppHub />} />
         <Route path="/discovery" element={<Discovery />} />
         <Route path="/communities" element={<Communities />} />
         <Route path="/about" element={<About />} />

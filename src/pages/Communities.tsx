@@ -5,7 +5,6 @@ import EditorialSpotlight from '../components/communities/EditorialSpotlight';
 import FrequencyDiscovery from '../components/communities/FrequencyDiscovery';
 import CommunityLeaders from '../components/communities/CommunityLeaders';
 import InitiationCTA from '../components/communities/InitiationCTA';
-import MobileBottomNav from '../components/MobileBottomNav';
 
 export default function Communities() {
   return (
@@ -17,7 +16,6 @@ export default function Communities() {
       <CommunityLeaders />
       <InitiationCTA />
       <Footer />
-      <MobileBottomNav />
     </>
   );
 }

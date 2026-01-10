@@ -1,5 +1,4 @@
 import Navbar from '../../components/Navbar';
-import MobileBottomNav from '../../components/MobileBottomNav';
 import { Users, Calendar, ArrowRight, Bookmark } from 'lucide-react';
 
 const events = [
@@ -8,27 +7,38 @@ const events = [
     date: "Fri, Oct 30 • 11:00 PM",
     title: "Warehouse Project: 004",
     price: "$35",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
+    badge: "Sold Out",
+    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 2,
-    date: "Sat, Nov 07 • 10:00 PM",
-    title: "Dubstep Chronicles",
-    price: "$25",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
+    date: "Nov 12 - 14 • 12:00 PM",
+    title: "Electric Garden",
+    price: "$89",
+    badge: "Featured",
+    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 3,
+    date: "Sat, Nov 07 • 10:00 PM",
+    title: "Dubstep Chronicles",
+    price: "$25",
+    badge: null,
+    image: "https://images.unsplash.com/photo-1598387993441-a364f854c3e1?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: 4,
     date: "Fri, Nov 13 • 11:00 PM",
     title: "Jungle Massive",
     price: "$30",
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
+    badge: null,
+    image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
 export default function CommunityHub() {
   return (
-    <div className="bg-dark min-h-screen text-white font-sans selection:bg-lime selection:text-black pb-24">
+    <div className="bg-dark min-h-screen text-white font-sans selection:bg-lime selection:text-black">
       <Navbar />
       
       {/* Branded Header Banner */}
@@ -70,6 +80,11 @@ export default function CommunityHub() {
                 <div key={event.id} className="group relative bg-surface border border-white/5 hover:border-lime/50 transition-all duration-300 rounded-sm overflow-hidden flex flex-col h-full cursor-pointer">
                     <div className="relative h-56 overflow-hidden">
                         <img src={event.image} alt={event.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        {event.badge && (
+                            <div className={`absolute top-4 right-4 text-xs font-semibold px-2 py-1 uppercase rounded-sm ${event.badge === 'Sold Out' ? 'bg-white text-dark' : 'bg-lime text-dark'}`}>
+                                {event.badge}
+                            </div>
+                        )}
                     </div>
                     <div className="p-6 flex flex-col flex-grow">
                         <div className="flex justify-between items-start mb-4">
@@ -91,8 +106,6 @@ export default function CommunityHub() {
             ))}
         </div>
       </div>
-
-      <MobileBottomNav />
     </div>
   );
 }

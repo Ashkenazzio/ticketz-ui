@@ -28,16 +28,16 @@ export default function CommunitySpotlight() {
   return (
     <section className="bg-surface border-y border-white/5 py-24">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-            <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
-                <div>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-4 sm:gap-6">
+                <div className="text-center md:text-left">
                      <div className="inline-flex items-center gap-2 mb-4 text-lime font-mono text-xs uppercase tracking-widest">
                         <Sparkles className="w-3 h-3" /> Curated Vibes
                     </div>
-                    <h2 className="font-display text-5xl md:text-6xl font-semibold uppercase tracking-tighter leading-none">
-                        Find Your <br/><span className="text-gray-500">Frequency.</span>
+                    <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold uppercase tracking-tighter leading-none">
+                        Find Your <br className="hidden sm:block"/><span className="text-lime">Frequency.</span>
                     </h2>
                 </div>
-                <p className="text-gray-400 text-lg max-w-md font-sans">
+                <p className="text-gray-400 text-base sm:text-lg max-w-md font-sans text-center md:text-left">
                     Don't just browse events. Choose your mood.
                 </p>
             </div>

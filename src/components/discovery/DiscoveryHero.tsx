@@ -11,8 +11,8 @@ const ARTWORKS = [
     },
     {
         id: '2',
-        url: `${BASE}event-images/techno-gathering.jpg`,
-        alt: 'Techno Gathering',
+        url: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80',
+        alt: 'Rave Concert',
         className: 'rotate-[-3deg] translate-y-4 z-10 hidden md:block'
     },
     {
@@ -50,34 +50,34 @@ const ARTWORKS = [
 export default function DiscoveryHero() {
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-start text-center px-4 bg-dark pt-32 pb-20 overflow-hidden">
-        <div className="max-w-5xl mx-auto space-y-8 relative z-10">
+        <div className="max-w-5xl mx-auto space-y-6 sm:space-y-8 relative z-10">
             <span className="text-lime font-sans text-xs uppercase tracking-widest mb-4 border border-lime/30 px-3 py-1 rounded-md bg-lime/5 inline-block">
                 Events • Community • Culture
             </span>
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-[7rem] font-bold text-white uppercase leading-[0.9] tracking-tight">
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl lg:text-[7rem] font-bold text-white uppercase leading-[0.95] tracking-tight">
                 The pulse of
-                <span className="block italic">Culture</span>
+                <span className="block italic text-lime">Culture</span>
             </h1>
-            
-            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto font-sans">
+
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-sans px-2">
                 Discover underground events, connect with your tribe, and experience the power of community-first ticketing.
             </p>
 
             <div className="pt-4 flex flex-col items-center gap-4">
-                <button className="bg-lime text-dark font-sans font-bold text-lg px-8 py-4 rounded-lg hover:bg-limehover transition-transform hover:scale-105 active:scale-95 flex items-center gap-2">
+                <button className="bg-lime text-dark font-sans font-bold text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-sm hover:bg-limehover transition-transform hover:scale-105 active:scale-95 flex items-center gap-2">
                     Start Exploring
                 </button>
             </div>
         </div>
 
         {/* Artworks Grid/Flow */}
-        <div className="w-full mt-20 flex items-center justify-center gap-4 px-4 h-[400px] relative">
+        <div className="w-full mt-12 sm:mt-20 flex items-center justify-center gap-2 sm:gap-4 px-4 h-[280px] sm:h-[400px] relative overflow-hidden">
              {ARTWORKS.map((art) => (
-                <div key={art.id} className={`relative flex-shrink-0 transition-all duration-500 ease-out hover:z-40 hover:scale-105 ${art.className} w-48 h-64 md:w-64 md:h-80 group`}>
-                    <div className="w-full h-full rounded-xl overflow-hidden border-[6px] border-dark shadow-lg">
-                        <img 
-                            src={art.url} 
-                            alt={art.alt} 
+                <div key={art.id} className={`relative flex-shrink-0 transition-all duration-500 ease-out hover:z-40 hover:scale-105 ${art.className} w-32 h-44 sm:w-48 sm:h-64 md:w-64 md:h-80 group`}>
+                    <div className="w-full h-full rounded-lg sm:rounded-xl overflow-hidden border-4 sm:border-[6px] border-dark shadow-lg">
+                        <img
+                            src={art.url}
+                            alt={art.alt}
                             className="w-full h-full object-cover"
                         />
                     </div>

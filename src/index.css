@@ -6,8 +6,16 @@
   body {
     @apply bg-dark text-white font-sans antialiased;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-bold text-white;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    background: rgba(13, 18, 22, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
   }
 }

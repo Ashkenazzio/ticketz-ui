@@ -16,18 +16,18 @@ export default function CommunitiesHero() {
             <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/40 to-dark"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-8 relative z-10 pt-10">
-             <h1 className="font-serif text-5xl md:text-7xl lg:text-[6rem] font-bold text-white leading-[1] tracking-tight">
+        <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8 relative z-10 pt-10 px-4">
+             <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-[6rem] font-bold text-white leading-[1.1] sm:leading-[1] tracking-tight">
                 Don't Just Go Out. <br/>
                 <span className="text-lime italic">Belong.</span>
             </h1>
-            
-            <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto font-sans leading-relaxed">
+
+            <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-sans leading-relaxed">
                 Events last a few hours. Connections last a lifetime. <br className="hidden md:block"/>
                 Find the collective that speaks your language.
             </p>
             
-            <div className="pt-8 animate-bounce">
+            <div className="pt-8 animate-bounce flex justify-center">
                 <ArrowDown className="w-8 h-8 text-white/50" />
             </div>
         </div>

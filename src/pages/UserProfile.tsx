@@ -7,9 +7,9 @@ const myCommunities = [
 ];
 
 const pastEvents = [
-    { title: "Neon Sunrise 5K", date: "Oct 24, 2026", image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" },
-    { title: "React Patterns", date: "Oct 28, 2026", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" },
-    { title: "Warehouse Project", date: "Oct 30, 2026", image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop" },
+    { title: "Neon Sunrise 5K", date: "Oct 24, 2026", image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=800&auto=format&fit=crop" },
+    { title: "React Patterns Workshop", date: "Oct 28, 2026", image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=800&auto=format&fit=crop" },
+    { title: "Warehouse Project: 004", date: "Oct 30, 2026", image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop" },
 ];
 
 export default function UserProfile() {

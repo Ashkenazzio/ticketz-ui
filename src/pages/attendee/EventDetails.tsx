@@ -20,7 +20,7 @@ export default function EventDetails() {
         
         {/* Left: Poster / Immersive Visual */}
         <div className="lg:w-1/2 h-[50vh] lg:h-[calc(100vh-80px)] relative lg:fixed lg:left-0 lg:top-20 z-0">
-            <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Event Poster" />
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Event Poster" />
             <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-90 lg:opacity-40"></div>
             
             <Link to="/" className="absolute top-6 left-6 z-20 w-10 h-10 bg-dark/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-dark transition-colors border border-white/10">
@@ -41,9 +41,23 @@ export default function EventDetails() {
                     <button className="ml-auto text-gray-400 hover:text-white transition-colors"><Share2 className="w-5 h-5" /></button>
                 </div>
 
-                <h1 className="font-display text-5xl md:text-7xl font-semibold uppercase tracking-tighter leading-[0.9] mb-8">
+                <h1 className="font-display text-5xl md:text-7xl font-semibold uppercase tracking-tighter leading-[0.9] mb-6">
                     Electric<br/>Garden
                 </h1>
+
+                {/* Hosted By Community */}
+                <Link to="/community/1" className="flex items-center gap-4 mb-8 p-4 bg-surface border border-white/10 rounded-sm hover:border-lime/30 transition-colors group">
+                    <div className="w-14 h-14 rounded-sm overflow-hidden border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?q=80&w=200&auto=format&fit=crop" alt="Bass Sector" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex-1">
+                        <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Hosted by</div>
+                        <div className="font-display text-xl font-semibold uppercase tracking-tight text-white group-hover:text-lime transition-colors">Bass Sector</div>
+                    </div>
+                    <div className="text-gray-500 group-hover:text-lime transition-colors">
+                        <ArrowLeft className="w-5 h-5 rotate-180" />
+                    </div>
+                </Link>
 
                 {/* Key Info Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 border-y border-white/10 py-8">
@@ -100,12 +114,12 @@ export default function EventDetails() {
             </div>
 
             {/* Sticky Bottom Bar */}
-            <div className="fixed bottom-0 right-0 w-full lg:w-1/2 bg-surface border-t border-white/10 p-6 flex items-center justify-between z-50">
+            <div className="fixed bottom-0 right-0 w-full lg:w-1/2 bg-surface border-t border-white/10 p-4 sm:p-6 flex items-center justify-between z-50">
                 <div>
                     <div className="text-xs text-gray-500 uppercase tracking-widest mb-1">Total Price</div>
                     <div className="text-3xl font-display font-semibold text-white">$89.00</div>
                 </div>
-                <Link to="/checkout" className="bg-lime text-dark font-display font-semibold uppercase tracking-tight px-10 py-4 rounded-sm hover:bg-limehover transition-colors">
+                <Link to="/checkout" className="bg-lime text-dark font-display font-semibold uppercase tracking-tight px-6 sm:px-10 py-3 sm:py-4 rounded-sm hover:bg-limehover transition-colors text-sm sm:text-base">
                     Buy Tickets
                 </Link>
             </div>

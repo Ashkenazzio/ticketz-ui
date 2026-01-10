@@ -13,7 +13,7 @@ export default function DiscoverySpotlight() {
                         <Sparkles className="w-3 h-3" /> Community Spotlight
                     </div>
                     <h2 className="font-display text-5xl md:text-6xl font-semibold uppercase tracking-tighter leading-none mb-6">
-                        Bass Sector<br/>Collective
+                        Bass<br/>Sector
                     </h2>
                     <p className="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed">
                         A curation of high-fidelity sound system culture. From dubstep to jungle, we host the most immersive underground events in the city.
@@ -42,10 +42,10 @@ export default function DiscoverySpotlight() {
 
                 {/* Visual grid */}
                 <div className="grid grid-cols-2 gap-4">
-                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 1" />
-                    <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 2" />
-                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 3" />
-                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 4" />
+                    <img src="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?q=80&w=600&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Bass Sector Event" />
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=600&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Warehouse Party" />
+                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=600&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Concert Crowd" />
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=600&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Rave Lights" />
                 </div>
             </div>
         </div>

@@ -5,7 +5,6 @@ import DiscoverySpotlight from '../components/discovery/DiscoverySpotlight';
 import EventHighlight from '../components/EventHighlight';
 import DiscoveryWallet from '../components/discovery/DiscoveryWallet';
 import Footer from '../components/Footer';
-import MobileBottomNav from '../components/MobileBottomNav';
 
 export default function Discovery() {
   return (
@@ -17,7 +16,6 @@ export default function Discovery() {
       <EventHighlight />
       <DiscoveryWallet />
       <Footer />
-      <MobileBottomNav />
     </>
   );
 }

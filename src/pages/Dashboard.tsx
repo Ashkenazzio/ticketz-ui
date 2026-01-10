@@ -9,15 +9,15 @@ export default function Dashboard() {
   return (
     <DashboardLayout>
         {/* Header Action */}
-        <div className="flex justify-between items-end mb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 mb-8">
             <div>
-                <h1 className="font-display text-4xl font-semibold uppercase tracking-tighter text-white leading-none">Dashboard</h1>
-                <p className="text-gray-400 mt-2">Welcome back, Alex. Here's what's happening today.</p>
+                <h1 className="font-display text-3xl sm:text-4xl font-semibold uppercase tracking-tighter text-white leading-none">Dashboard</h1>
+                <p className="text-gray-400 mt-2 text-sm sm:text-base">Welcome back, Alex. Here's what's happening today.</p>
             </div>
-                <Link to="/dashboard/events/create" className="bg-lime text-dark font-display font-semibold uppercase tracking-tight px-6 py-3 rounded-sm hover:bg-limehover transition-colors flex items-center gap-2">
-                    <PlusCircle className="w-5 h-5" />
-                    Create New Event
-                </Link>
+            <Link to="/dashboard/events/create" className="bg-lime text-dark font-display font-semibold uppercase tracking-tight px-4 sm:px-6 py-2.5 sm:py-3 rounded-sm hover:bg-limehover transition-colors flex items-center gap-2 text-sm sm:text-base w-full sm:w-auto justify-center">
+                <PlusCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                Create Event
+            </Link>
         </div>
 
         {/* KPI Section */}

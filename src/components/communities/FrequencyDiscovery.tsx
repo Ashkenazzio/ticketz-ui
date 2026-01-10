@@ -29,12 +29,14 @@ const CATEGORIES = [
 export default function FrequencyDiscovery() {
   return (
     <section className="py-24 border-b border-white/5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 mb-12 flex items-end justify-between">
-            <h2 className="font-display text-4xl md:text-5xl font-semibold uppercase tracking-tighter">
-                Choose Your <span className="text-gray-600">Frequency.</span>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 mb-8 sm:mb-12 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold uppercase tracking-tighter">
+                Choose Your <span className="text-lime">Frequency.</span>
             </h2>
-            <div className="hidden md:block text-lime font-mono text-xs uppercase tracking-widest">
-                Scroll to Explore -&gt;
+            <div className="text-lime/70 font-mono text-xs uppercase tracking-widest flex items-center gap-2">
+                <span className="hidden sm:inline">Scroll to Explore</span>
+                <span className="sm:hidden">Swipe to explore</span>
+                <span>→</span>
             </div>
         </div>
 

@@ -1,4 +1,4 @@
-import { Calendar, Zap, MapPin, Music, ArrowUpRight } from 'lucide-react';
+import { Calendar, MapPin, Music, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function EventHighlight() {
@@ -9,7 +9,7 @@ export default function EventHighlight() {
         <div className="flex flex-col lg:flex-row bg-dark border border-white/10 rounded-sm overflow-hidden h-auto lg:h-[600px]">
             {/* Left: Poster Art */}
             <div className="lg:w-1/2 relative">
-                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Electric Garden" />
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Electric Garden" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-80 lg:opacity-30"></div>
                 <div className="absolute bottom-6 left-6 z-10 lg:hidden">
                      <h2 className="font-display text-4xl font-semibold uppercase tracking-tighter text-white">Electric Garden</h2>
@@ -17,7 +17,7 @@ export default function EventHighlight() {
             </div>
 
             {/* Right: Details */}
-            <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-between bg-surface relative">
+            <div className="lg:w-1/2 p-5 sm:p-8 lg:p-12 flex flex-col justify-between bg-surface relative">
                 
                 <div>
                     <div className="flex items-center gap-3 mb-6">
@@ -29,12 +29,12 @@ export default function EventHighlight() {
                         Electric<br/>Garden
                     </h2>
 
-                    <div className="flex items-center gap-3 mb-8 cursor-pointer group">
-                        <div className="w-8 h-8 rounded-full bg-white/10 border border-white/10 flex items-center justify-center">
-                            <Zap className="w-4 h-4 text-lime" />
+                    <Link to="/community/1" className="flex items-center gap-3 mb-8 group w-fit">
+                        <div className="w-8 h-8 rounded-full overflow-hidden border border-white/10">
+                            <img src="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?q=80&w=100&auto=format&fit=crop" alt="Bass Sector" className="w-full h-full object-cover" />
                         </div>
-                        <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">Hosted by <span className="text-white underline decoration-lime underline-offset-4">Sonic Bloom</span></span>
-                    </div>
+                        <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">Hosted by <span className="text-lime underline decoration-lime underline-offset-4 group-hover:text-limehover">Bass Sector</span></span>
+                    </Link>
 
                     <div className="space-y-4 mb-8">
                         <div className="flex gap-4">
@@ -59,13 +59,13 @@ export default function EventHighlight() {
                 </div>
 
                 {/* Sticky-ish Bottom Action */}
-                <div className="pt-8 border-t border-white/10 flex items-center justify-between">
+                <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div>
-                        <div className="text-sm text-gray-400 uppercase tracking-wide">Starting from</div>
-                        <div className="text-3xl font-display font-semibold text-white">$89.00</div>
+                        <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Starting from</div>
+                        <div className="text-2xl sm:text-3xl font-display font-semibold text-white">$89.00</div>
                     </div>
-                    <Link to="/event/1" className="bg-lime text-dark font-display font-semibold uppercase tracking-tight px-10 py-4 rounded-sm hover:bg-limehover transition-colors flex items-center gap-2">
-                        Get Tickets <ArrowUpRight className="w-5 h-5" />
+                    <Link to="/event/1" className="bg-lime text-dark font-display font-semibold uppercase tracking-tight px-6 sm:px-10 py-3 sm:py-4 rounded-sm hover:bg-limehover transition-colors flex items-center gap-2 w-full sm:w-auto justify-center text-sm sm:text-base">
+                        Get Tickets <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                     </Link>
                 </div>
             </div>

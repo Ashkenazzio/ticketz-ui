@@ -31,26 +31,25 @@ export default function WalletPreview() {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-lime/20 rounded-full blur-[100px]"></div>
                 
                 {/* Phone Mockup */}
-                <div className="relative w-[280px] h-[560px] bg-black border-[8px] border-gray-800 rounded-[3rem] shadow-2xl overflow-hidden transform rotate-[-6deg] hover:rotate-0 transition-transform duration-500">
+                <div className="relative w-[240px] sm:w-[260px] h-[480px] sm:h-[520px] bg-black border-[6px] border-gray-800 rounded-[2.5rem] shadow-2xl overflow-hidden transform rotate-[-6deg] hover:rotate-0 transition-transform duration-500">
                     {/* Screen Content */}
                     <div className="w-full h-full bg-surface relative flex flex-col">
-                        {/* Status Bar */}
-                        <div className="h-6 w-full flex justify-between px-6 pt-3">
-                            <div className="w-12 h-full bg-white/10 rounded-full"></div>
-                             <div className="w-4 h-4 bg-white/10 rounded-full"></div>
+                        {/* Status Bar / Notch */}
+                        <div className="h-8 w-full flex justify-center pt-2">
+                            <div className="w-20 h-5 bg-black rounded-full"></div>
                         </div>
 
                         {/* Ticket Glow */}
-                        <div className="flex-1 flex flex-col items-center justify-center p-8 relative">
+                        <div className="flex-1 flex flex-col items-center justify-center px-6 py-4 relative">
                              {/* Success State */}
-                             <div className="w-full aspect-[3/5] bg-lime rounded-xl shadow-[0_0_60px_rgba(167,241,117,0.4)] flex flex-col items-center justify-center text-dark space-y-4 animate-pulse-slow">
-                                <CheckCircle2 className="w-20 h-20" />
-                                <div className="font-display font-bold text-2xl uppercase tracking-tighter">Access Granted</div>
+                             <div className="w-full max-w-[160px] aspect-square bg-lime rounded-2xl shadow-[0_0_60px_rgba(167,241,117,0.4)] flex flex-col items-center justify-center text-dark space-y-2">
+                                <CheckCircle2 className="w-12 h-12" />
+                                <div className="font-display font-bold text-sm uppercase tracking-tighter text-center px-2">Access Granted</div>
                              </div>
                         </div>
 
                         {/* Bottom Bar */}
-                        <div className="h-1 bg-white/20 w-1/3 mx-auto mb-4 rounded-full"></div>
+                        <div className="h-1 bg-white/20 w-1/3 mx-auto mb-3 rounded-full"></div>
                     </div>
                 </div>
             </div>
