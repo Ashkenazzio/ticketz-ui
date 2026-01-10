@@ -3,12 +3,12 @@ import Navbar from '../../components/Navbar';
 import { Calendar, MapPin, Clock, Share2, ArrowLeft } from 'lucide-react';
 
 const artists = [
-    { name: "Bonobo", img: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?auto=format&fit=crop&w=200&q=80" },
-    { name: "Four Tet", img: "https://images.unsplash.com/photo-1514525253440-b393452e8d26?auto=format&fit=crop&w=200&q=80" },
-    { name: "Floating Points", img: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=200&q=80" },
-    { name: "Caribou", img: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=200&q=80" },
-    { name: "Jon Hopkins", img: "https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=200&q=80" },
-    { name: "Bicep", img: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=200&q=80" },
+    { name: "Bonobo", img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=200&q=80" },
+    { name: "Four Tet", img: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=200&q=80" },
+    { name: "Floating Points", img: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?auto=format&fit=crop&w=200&q=80" },
+    { name: "Caribou", img: "https://images.unsplash.com/photo-1542596594-649edbc13630?auto=format&fit=crop&w=200&q=80" },
+    { name: "Jon Hopkins", img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" },
+    { name: "Bicep", img: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&w=200&q=80" },
 ];
 
 export default function EventDetails() {
@@ -20,7 +20,7 @@ export default function EventDetails() {
         
         {/* Left: Poster / Immersive Visual */}
         <div className="lg:w-1/2 h-[50vh] lg:h-[calc(100vh-80px)] relative lg:fixed lg:left-0 lg:top-20 z-0">
-            <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Event Poster" />
+            <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Event Poster" />
             <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-90 lg:opacity-40"></div>
             
             <Link to="/" className="absolute top-6 left-6 z-20 w-10 h-10 bg-dark/50 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-dark transition-colors border border-white/10">

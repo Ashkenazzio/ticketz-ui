@@ -43,9 +43,9 @@ export default function CommunitySpotlight() {
                 {/* Visual grid */}
                 <div className="grid grid-cols-2 gap-4">
                     <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 1" />
-                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 2" />
-                    <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 3" />
-                    <img src="https://images.unsplash.com/photo-1598387993441-a364f854c3e1?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 4" />
+                    <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 2" />
+                    <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 3" />
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1000&auto=format&fit=crop" className="w-full h-64 object-cover rounded-sm mt-8 opacity-80 hover:opacity-100 transition-opacity" alt="Spotlight 4" />
                 </div>
             </div>
         </div>

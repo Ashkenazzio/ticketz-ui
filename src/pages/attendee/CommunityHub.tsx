@@ -8,21 +8,21 @@ const events = [
     date: "Fri, Oct 30 • 11:00 PM",
     title: "Warehouse Project: 004",
     price: "$35",
-    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop"
   },
   {
     id: 2,
     date: "Sat, Nov 07 • 10:00 PM",
     title: "Dubstep Chronicles",
     price: "$25",
-    image: "https://images.unsplash.com/photo-1571266028243-3716f02d2d2e?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
   },
   {
     id: 3,
     date: "Fri, Nov 13 • 11:00 PM",
     title: "Jungle Massive",
     price: "$30",
-    image: "https://images.unsplash.com/photo-1563841930606-67e2bce48b78?q=80&w=2070&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop"
   }
 ];
 
@@ -34,7 +34,7 @@ export default function CommunityHub() {
       {/* Branded Header Banner */}
       <div className="relative h-64 md:h-80 w-full overflow-hidden">
         <img 
-            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=2070&auto=format&fit=crop" 
             alt="Banner" 
             className="w-full h-full object-cover opacity-60"
         />

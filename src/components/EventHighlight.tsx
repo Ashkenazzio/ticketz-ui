@@ -9,7 +9,7 @@ export default function EventHighlight() {
         <div className="flex flex-col lg:flex-row bg-dark border border-white/10 rounded-sm overflow-hidden h-auto lg:h-[600px]">
             {/* Left: Poster Art */}
             <div className="lg:w-1/2 relative">
-                <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Electric Garden" />
+                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Electric Garden" />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-80 lg:opacity-30"></div>
                 <div className="absolute bottom-6 left-6 z-10 lg:hidden">
                      <h2 className="font-display text-4xl font-semibold uppercase tracking-tighter text-white">Electric Garden</h2>

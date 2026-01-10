@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const events = [
   {
     id: 1,
-    image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg",
+    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2070&auto=format&fit=crop",
     badge: "Selling Fast",
     date: "Sat, Oct 24 • 06:00 AM",
     price: "$15",
@@ -15,7 +15,7 @@ const events = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2070&auto=format&fit=crop",
     badge: null,
     date: "Wed, Oct 28 • 06:30 PM",
     price: "Free",
