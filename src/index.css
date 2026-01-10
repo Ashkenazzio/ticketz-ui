@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-dark text-white font-sans antialiased;
+  }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;

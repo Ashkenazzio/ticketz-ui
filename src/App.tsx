@@ -13,9 +13,10 @@ import UserProfile from './pages/UserProfile';
 function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      <Routes>
-        {/* Public / Landing */}
-        <Route path="/" element={<LandingPage />} />
+      <div className="bg-dark text-white min-h-screen">
+        <Routes>
+          {/* Public / Landing */}
+          <Route path="/" element={<LandingPage />} />
         
         {/* Attendee Journey */}
         <Route path="/community/:id" element={<CommunityHub />} />
@@ -32,8 +33,9 @@ function App() {
         <Route path="/auth/login" element={<Login />} />
         <Route path="/profile" element={<UserProfile />} />
       </Routes>
-    </Router>
-  );
+    </div>
+  </Router>
+);
 }
 
 export default App;
