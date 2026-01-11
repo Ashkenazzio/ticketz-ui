@@ -1,6 +1,16 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 
 export default function Login() {
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    login();
+    navigate('/app');
+  };
+
   return (
     <div className="flex h-screen bg-dark text-white font-sans selection:bg-lime selection:text-black">
         
@@ -48,9 +58,13 @@ export default function Login() {
                         <input type="password" className="w-full bg-dark border border-white/10 rounded-sm p-4 text-white placeholder-gray-600 focus:outline-none focus:border-lime transition-colors" placeholder="••••••••" />
                     </div>
 
-                    <Link to="/dashboard" className="block w-full bg-lime text-dark font-sans font-bold uppercase tracking-tight py-4 rounded-sm hover:bg-limehover transition-colors text-center">
+                    <button
+                        type="submit"
+                        onClick={handleSubmit}
+                        className="block w-full bg-lime text-dark font-sans font-bold uppercase tracking-tight py-4 rounded-sm hover:bg-limehover transition-colors text-center"
+                    >
                         Sign In
-                    </Link>
+                    </button>
                 </div>
 
                 <div className="text-center text-sm text-gray-500">

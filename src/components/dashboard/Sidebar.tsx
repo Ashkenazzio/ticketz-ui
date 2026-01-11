@@ -6,7 +6,7 @@ const navItems = [
     { name: 'Events', icon: Calendar, path: '/dashboard/events' },
     { name: 'Members', icon: Users, path: '/dashboard/members' },
     { name: 'Analytics', icon: BarChart3, path: '/dashboard/analytics' },
-    { name: 'Settings', icon: Settings, path: '/dashboard/settings' },
+    { name: 'Settings', icon: Settings, path: '/settings' },
 ];
 
 interface SidebarProps {
